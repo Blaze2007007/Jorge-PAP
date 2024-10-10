@@ -25,10 +25,6 @@ vely = salto * grv
 {
 	vely += 1
 }
-if(_baixo)
-{
-vely = vely + 5
-}
 move_and_collide(velx,vely,_mapats)
 
 if(_direita)
@@ -44,15 +40,21 @@ if(velx == 0)
 	sprite_index = spr_slimenormal
 }
 
-if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x, mouse_y - 75, obj_clicavel) && ativardialogo == true) 
+if (place_meeting(x,y,obj_limite)) 
 {
 	obj_dialogo1.visible = true
 	obj_dialogo1.image_speed = 0
 	obj_dialogo1.image_index = 0
+	salto = 0
+	slimevel = 0
 	show_debug_message("tocado")
 }
 if(instance_exists(obj_dialogo1) == false)
 {
+ativardialogo = false
+slimevel = 5
+salto = - 35
+instance_destroy(obj_limite)
 trocadeslimes()
 }
 if(place_meeting(x,y,obj_centro) && keyboard_check_pressed(ord("C")))
@@ -60,4 +62,63 @@ if(place_meeting(x,y,obj_centro) && keyboard_check_pressed(ord("C")))
 	room_goto_next()
 	obj_slime.x = 170
 	obj_slime.y = 600
+}
+
+if(place_meeting(x,y,_mapats)) //Correção de colisões
+{
+	for(var _i = 0; _i < 1000; _i++)
+	{
+		//Direita
+		if(!place_meeting(x + _i,y,_mapats))
+		{
+			x += _i
+			break
+		}
+		//Esquerda
+		if(!place_meeting(x - _i,y,_mapats))
+		{
+			x -= _i
+			break
+		}
+		//Cima
+		if(!place_meeting(x,y - _i,_mapats))
+		{
+			y -= _i
+			break
+		}
+		//Baixo
+		if(!place_meeting(x,y + _i,_mapats))
+		{
+			y += _i
+			break
+		}
+		//Topo direita
+		if(!place_meeting(x + _i,y - _i,_mapats))
+		{
+			x += _i
+			y -= _i
+			break
+		}
+		//Topo esquerda
+		if(!place_meeting(x - _i,y - _i,_mapats))
+		{
+			x -= _i
+			y -= _i
+			break
+		}
+		//Baixo direita
+		if(!place_meeting(x + _i,y + _i,_mapats))
+		{
+			x += _i
+			y += _i
+			break
+		}
+		//Baixo esquerda
+		if(!place_meeting(x - _i,y + _i,_mapats))
+		{
+			x -= _i
+			y += _i
+			break
+		}
+	}
 }

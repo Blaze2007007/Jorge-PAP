@@ -40,6 +40,8 @@
     {"id":{"name":"obj_clicavel","path":"objects/obj_clicavel/obj_clicavel.yy",},},
     {"id":{"name":"obj_dialogo1","path":"objects/obj_dialogo1/obj_dialogo1.yy",},},
     {"id":{"name":"obj_info","path":"objects/obj_info/obj_info.yy",},},
+    {"id":{"name":"obj_limite","path":"objects/obj_limite/obj_limite.yy",},},
+    {"id":{"name":"obj_parede","path":"objects/obj_parede/obj_parede.yy",},},
     {"id":{"name":"obj_porta","path":"objects/obj_porta/obj_porta.yy",},},
     {"id":{"name":"obj_slime","path":"objects/obj_slime/obj_slime.yy",},},
     {"id":{"name":"obj_slimemoldavel","path":"objects/obj_slimemoldavel/obj_slimemoldavel.yy",},},
@@ -55,6 +57,8 @@
     {"id":{"name":"spr_dialogo1","path":"sprites/spr_dialogo1/spr_dialogo1.yy",},},
     {"id":{"name":"spr_fundo","path":"sprites/spr_fundo/spr_fundo.yy",},},
     {"id":{"name":"spr_info","path":"sprites/spr_info/spr_info.yy",},},
+    {"id":{"name":"spr_limite","path":"sprites/spr_limite/spr_limite.yy",},},
+    {"id":{"name":"spr_parede","path":"sprites/spr_parede/spr_parede.yy",},},
     {"id":{"name":"spr_porta_aberta","path":"sprites/spr_porta_aberta/spr_porta_aberta.yy",},},
     {"id":{"name":"spr_porta_fechada","path":"sprites/spr_porta_fechada/spr_porta_fechada.yy",},},
     {"id":{"name":"spr_slimemoldavel_direita","path":"sprites/spr_slimemoldavel_direita/spr_slimemoldavel_direita.yy",},},
@@ -72,9 +76,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_nivel1","path":"rooms/rm_nivel1/rm_nivel1.yy",},},
     {"roomId":{"name":"rm_nivel2","path":"rooms/rm_nivel2/rm_nivel2.yy",},},
     {"roomId":{"name":"rm_nivel3","path":"rooms/rm_nivel3/rm_nivel3.yy",},},
+    {"roomId":{"name":"rm_nivel1","path":"rooms/rm_nivel1/rm_nivel1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
