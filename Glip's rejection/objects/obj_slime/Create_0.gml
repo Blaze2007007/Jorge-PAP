@@ -7,7 +7,25 @@ nochao = false
 ativardialogo = true
 target_delta = 1/60
 trocavel = false
+ataque = 0
+global.gamepaused = false
+invulnerable = 0
 
+enum STATES
+{
+	IDLE,
+	MOVING,
+	MENU,
+	ATTACKING
+}
+
+state = STATES.IDLE
 
 actual_delta = delta_time/1000000
 delta_multiplier = actual_delta/target_delta
+
+inmenu = false
+
+dano = 5
+
+sprite_ataque = spr_slimenormal_ataque_direitaHB

@@ -4,15 +4,19 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_slime",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"grp_slimes",
+    "path":"folders/Objects/grp_slimes.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_jogador",
+    "path":"objects/obj_jogador/obj_jogador.yy",
+  },
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -39,6 +43,9 @@
     "name":"spr_slimenormal",
     "path":"sprites/spr_slimenormal/spr_slimenormal.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_slimenormal",
+    "path":"sprites/spr_slimenormal/spr_slimenormal.yy",
+  },
   "visible":true,
 }

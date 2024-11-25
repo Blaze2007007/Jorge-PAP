@@ -9,10 +9,13 @@
   "name":"obj_slimepegajoso",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"grp_slimes",
+    "path":"folders/Objects/grp_slimes.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_jogador",
+    "path":"objects/obj_jogador/obj_jogador.yy",
+  },
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

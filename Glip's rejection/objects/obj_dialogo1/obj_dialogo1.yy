@@ -9,8 +9,8 @@
   "name":"obj_dialogo1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"grp_interacao",
+    "path":"folders/Objects/grp_interacao.yy",
   },
   "parentObjectId":null,
   "persistent":false,

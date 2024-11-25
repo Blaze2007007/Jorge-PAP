@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Atacar_Inimigos",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Atacar_Inimigos",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
